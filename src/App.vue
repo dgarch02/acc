@@ -8,20 +8,22 @@
 
       <v-toolbar-title style="width: 30000px" >Real Madrid C.F.</v-toolbar-title>
 
-      <v-btn :to="{name:'inicio'}"  v-on="on" icon>
+      <router-link to="/inicio"><v-btn v-on="on" icon>
 
           <v-icon>perm_identity</v-icon>  
       </v-btn>
-
+      </router-link>
     </v-app-bar>
 
 
     <br />
     <br />
     <br />
-
-    <v-card height="150">
-      <v-footer absolute class="font-weight-medium" color="blue darken-4" dark>
+    <template>
+    <component :is="layout"></component>
+    </template>
+    <v-card>
+      <v-footer  fixed absolute class="font-weight-medium" color="blue darken-4" dark>
         <v-col class="text-center" cols="12">
           {{ new Date().getFullYear() }} —
           <strong>Real Madrid Club de Fútbol</strong>
@@ -32,9 +34,15 @@
 </template>
 
 <script>
+  import PrincipalLayout from './components/layouts/Principal'
+  import {mapState} from 'vuex'
 export default {
+    
+    
+    components: { PrincipalLayout},
     data() {
         return {
+          layout: 'principal-layout'
         }
     }
 };

@@ -33,6 +33,7 @@
 
 <script>
 export default {
+    name: 'home',
     data() {
         return {
           //Para inicio sesion
