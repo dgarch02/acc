@@ -3,6 +3,12 @@
     <v-card-title>
       <v-spacer></v-spacer>Lista de partidos
       <v-spacer></v-spacer>
+      <v-text-field
+        v-model="search"
+        label="Busqueda de partidos"
+        single-line
+        hide-details
+      ></v-text-field>
     </v-card-title>
       <v-data-table
       :headers="headers"
@@ -20,10 +26,10 @@
       </v-toolbar>
     </template>
     <template v-slot:expanded-item >
-      <v-toolbar color="green" dark align='center'>
+      <v-toolbar color="blue darken-4"  align='center'>
         <v-spacer></v-spacer>
-          <router-link color="white" to="/butacas">
-            <button align-center color="white">Comprar Entradas</button>
+          <router-link  to="/butacas">
+            <button align-center >Comprar Entradas</button>
           </router-link> 
       </v-toolbar>
       

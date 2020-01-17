@@ -7,12 +7,6 @@
       </v-toolbar-items>
 
       <v-toolbar-title style="width: 30000px" >Real Madrid C.F.</v-toolbar-title>
-
-      <router-link to="/inicio"><v-btn v-on="on" icon>
-
-          <v-icon>perm_identity</v-icon>  
-      </v-btn>
-      </router-link>
     </v-app-bar>
 
 
