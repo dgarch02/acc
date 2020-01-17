@@ -4,6 +4,7 @@ import Home from './components/Home.vue'
 import Inicio from './components/InicioSesion.vue'
 import Tarjeta from './components/DatosTarjeta.vue'
 import Butacas from './components/Butacas.vue'
+import Confirmacion from './components/Confirmacion.vue'
 
 Vue.use(VueRouter)
 
@@ -31,6 +32,11 @@ export default  new VueRouter({
       path: '/butacas',
       name: 'butacas',
       component: Butacas
+    },
+    {
+      path: '/confirmacion',
+      name: 'confirmacion',
+      component: Confirmacion
     }
   ]
 })

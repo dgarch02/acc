@@ -1,5 +1,5 @@
 <template>
-  
+
     <v-layout  >
       <v-col  >
         <template>
@@ -47,6 +47,7 @@
         </template>
       </v-col>
     </v-layout>
+    
 </template>
 
 
