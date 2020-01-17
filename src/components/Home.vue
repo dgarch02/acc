@@ -22,7 +22,9 @@
     <template v-slot:expanded-item >
       <v-toolbar color="green" dark align='center'>
         <v-spacer></v-spacer>
+          <router-link color="white" to="/butacas">
             <button align-center color="white">Comprar Entradas</button>
+          </router-link> 
       </v-toolbar>
       
     </template>
