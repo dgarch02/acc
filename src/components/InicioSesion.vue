@@ -96,9 +96,14 @@
             </v-row>
          
             <v-row align-content="center" justify="center"> 
-              <v-btn >REGISTRARSE</v-btn>  
+              <v-btn color="blue darken-4"  class="white--text">REGISTRARSE</v-btn>  
             </v-row>
-       
+            <br>
+            </br>
+            <br>
+            </br>
+            <br>
+            </br>
           </v-layout>
         </template>
       </v-col>
@@ -126,19 +131,19 @@
         <v-spacer></v-spacer>
 
         <v-text-field
-          v-model="password"
-          :append-icon="show1 ? 'visibility' : 'visibility_off'"
-          :type="show1 ? 'text' : 'password'"
+          v-model="password1"
+          :append-icon="show3 ? 'visibility' : 'visibility_off'"
+          :type="show3 ? 'text' : 'password'"
           name="input-10-1"
           label="Contraseña"
-          @click:append="show1 = !show1"
+          @click:append="show3 = !show3"
         ></v-text-field>    
         <v-spacer></v-spacer>
 
     </v-row>
 
     <v-row align-content="center" justify="center"> 
-      <v-btn >ENTRAR</v-btn>  
+      <v-btn color="blue darken-4" class="white--text" >ENTRAR</v-btn>  
     </v-row>
      
   </v-layout>
@@ -153,7 +158,9 @@
 <script>
 export default {
   data: () => ({
-    show1: false
+    show1: false,
+    show2: false,
+    show3: false
   })
   
 };
