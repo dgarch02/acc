@@ -3,7 +3,7 @@
     <v-card-title>
       <v-spacer></v-spacer>Lista de partidos
       <v-spacer></v-spacer>
-      <v-text-field v-model="search" label="Busqueda de partidos" single-line hide-details></v-text-field>
+      <v-text-field v-model="search" color="blue darken-4" label="Busqueda de partidos" single-line hide-details></v-text-field>
     </v-card-title>
     <v-data-table
       :headers="headers"
@@ -16,16 +16,14 @@
       class="elevation-1"
     >
       <template v-slot:top>
-        <v-toolbar color="blue darken-4">
+        <v-toolbar color="blue darken-4" >
           <v-spacer></v-spacer>
         </v-toolbar>
       </template>
       <template v-slot:expanded-item>
         <v-toolbar color="blue darken-4" align="center">
           <v-spacer></v-spacer>
-          <router-link to="/butacas">
-            <button align-center>Comprar Entradas</button>
-          </router-link>
+          <v-btn to="/butacas" align-center text="true" dark>Comprar Entradas</v-btn>
         </v-toolbar>
       </template>
       <br />
@@ -47,6 +45,7 @@ export default {
       singleExpand: false,
       search: "",
       headers: [
+        { text: "", align: "center", sortable: false, value: "escudos" },
         { text: "Rival", align: "center", sortable: false, value: "name" },
         { text: "Dia", align: "center", sortable: false, value: "day" },
         { text: "Hora", align: "center", sortable: false, value: "time" },

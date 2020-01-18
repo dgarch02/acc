@@ -17,10 +17,10 @@
         <v-toolbar light>
           <v-toolbar-title>Fondo Sur</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-toolbar-title>50€</v-toolbar-title>
+          <v-toolbar-title class="ml-6">50€</v-toolbar-title>
           <v-spacer></v-spacer>
 
-          <v-select :items="items" color="blue darken-4" value=1></v-select>
+          <v-select :items="items" class="mt-5" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
             <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>
@@ -37,7 +37,7 @@
           <v-toolbar-title>100€</v-toolbar-title>
           <v-spacer></v-spacer>
 
-          <v-select :items="items" color="blue darken-4" value=1></v-select>
+          <v-select :items="items"  class="mt-5" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
             <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>
@@ -53,7 +53,7 @@
           <v-toolbar-title>50€</v-toolbar-title>
           <v-spacer></v-spacer>
 
-          <v-select :items="items" color="blue darken-4" value=1></v-select>
+          <v-select :items="items" class="mt-5" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
             <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>
@@ -66,9 +66,9 @@
         <v-toolbar light>
           <v-toolbar-title>Lateral Este</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-toolbar-title>200€</v-toolbar-title>
+          <v-toolbar-title class="ml-3">200€</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-select :items="items" color="blue darken-4" value=1></v-select>
+          <v-select :items="items" class="mt-5" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
             <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>

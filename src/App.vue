@@ -7,7 +7,7 @@
         </router-link>
       </v-toolbar-items>
 
-      <v-toolbar-title style="width: 30000px"><v-btn color="blue darken-4" dark to="/">Real Madrid C.F.</v-btn></v-toolbar-title>
+      <v-toolbar-title style="width: 30000px"><v-btn text="true" to="/">Real Madrid C.F.</v-btn></v-toolbar-title>
     </v-app-bar>
 
     <br />

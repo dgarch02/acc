@@ -8,30 +8,30 @@
               <h2>DATOS DEL CLIENTE</h2>
             </v-row>
 
-            <v-row align-content="center" justify="center">
+            <v-row align-content="center" justify="center" >
               <v-spacer></v-spacer>
-              <v-text-field v-model="nombre" label="Nombre"></v-text-field>
-              <v-spacer></v-spacer>
-            </v-row>
-            <v-row align-content="center" justify="center">
-              <v-spacer></v-spacer>
-              <v-text-field v-model="apellidos" label="Apellidos"></v-text-field>
+              <v-text-field v-model="nombre" label="Nombre" color="blue darken-4"></v-text-field>
               <v-spacer></v-spacer>
             </v-row>
             <v-row align-content="center" justify="center">
               <v-spacer></v-spacer>
-              <v-text-field v-model="correo" label="Correo electronico"></v-text-field>
+              <v-text-field v-model="apellidos" label="Apellidos" color="blue darken-4"></v-text-field>
+              <v-spacer></v-spacer>
+            </v-row>
+            <v-row align-content="center" justify="center">
+              <v-spacer></v-spacer>
+              <v-text-field v-model="correo" label="Correo electronico" color="blue darken-4"></v-text-field>
               <v-spacer></v-spacer>
             </v-row>
 
             <v-row align-content="center" justify="center">
               <v-spacer></v-spacer>
-              <v-text-field v-model="correo" label="Repetir Correo electronico"></v-text-field>
+              <v-text-field v-model="correo" label="Repetir Correo electronico" color="blue darken-4"></v-text-field>
               <v-spacer></v-spacer>
             </v-row>
             <v-row align-content="center" justify="center">
               <v-spacer></v-spacer>
-              <v-text-field v-model="correo" label="Telefono"></v-text-field>
+              <v-text-field v-model="correo" label="Telefono" color="blue darken-4"></v-text-field>
               <v-spacer></v-spacer>
             </v-row>
 
