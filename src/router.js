@@ -5,6 +5,7 @@ import Inicio from './components/InicioSesion.vue'
 import Tarjeta from './components/DatosTarjeta.vue'
 import Butacas from './components/Butacas.vue'
 import Confirmacion from './components/Confirmacion.vue'
+import DatosCompra from './components/DatosCompra.vue'
 
 Vue.use(VueRouter)
 
@@ -25,7 +26,7 @@ export default new VueRouter({
     },
     {
       path: '/tarjeta',
-      name: 'trajeta',
+      name: 'tarjeta',
       component: Tarjeta
     },
     {
@@ -37,7 +38,14 @@ export default new VueRouter({
       path: '/confirmacion',
       name: 'confirmacion',
       component: Confirmacion
+    },
+    {
+      path: '/datosDeLaCompra',
+      name: 'datosDeLaCompra',
+      component: DatosCompra
     }
+
+
   ]
 })
 
