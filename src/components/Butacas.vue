@@ -6,9 +6,9 @@
     <v-col align="center">
       <v-row>
         <v-toolbar color="blue darken-4" dark>
-            <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
           <v-toolbar-title>SELECCIONA LA ZONA</v-toolbar-title>
-            <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
         </v-toolbar>
       </v-row>
       <br />
@@ -75,7 +75,7 @@
           <v-toolbar-title>200€</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-combobox color="dark-blue 4" :items="items"></v-combobox>
-            <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
           <router-link color="white" to="/inicio">
             <v-btn icon>
               <v-icon>mdi-basket-outline</v-icon>

@@ -1,10 +1,9 @@
 <template>
-
-    <v-layout  >
-      <v-col  >
+  <v-layout align-space-between column>
+    <v-card>
+      <v-col>
         <template>
           <v-layout align-space-between column>
-            
             <v-row align-content="center" justify="center">
               <h2>DATOS DEL CLIENTE</h2>
             </v-row>
@@ -19,7 +18,7 @@
               <v-text-field v-model="apellidos" label="Apellidos"></v-text-field>
               <v-spacer></v-spacer>
             </v-row>
-              <v-row align-content="center" justify="center">
+            <v-row align-content="center" justify="center">
               <v-spacer></v-spacer>
               <v-text-field v-model="correo" label="Correo electronico"></v-text-field>
               <v-spacer></v-spacer>
@@ -35,19 +34,18 @@
               <v-text-field v-model="correo" label="Telefono"></v-text-field>
               <v-spacer></v-spacer>
             </v-row>
-         
-              <v-row align-content="center" justify="center"> 
+
+            <v-row align-content="center" justify="center">
               <router-link to="/tarjeta">
-              <v-btn color="blue darken-4"  class="white--text">CONTINUAR</v-btn> 
-              </router-link> 
+                <v-btn color="blue darken-4" class="white--text">CONTINUAR</v-btn>
+              </router-link>
             </v-row>
-               
-           
           </v-layout>
+          <br />
         </template>
       </v-col>
-    </v-layout>
-    
+    </v-card>
+  </v-layout>
 </template>
 
 
@@ -60,6 +58,5 @@ export default {
     show2: false,
     show3: false
   })
-  
 };
 </script>
