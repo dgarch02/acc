@@ -1,34 +1,142 @@
 <template>
-  <v-card>
-    <v-card-title>
-      <v-spacer></v-spacer>Lista de partidos
-      <v-spacer></v-spacer>
-      <v-text-field v-model="search" color="blue darken-4" label="Busqueda de partidos" single-line hide-details></v-text-field>
-    </v-card-title>
-    <v-data-table
-      :headers="headers"
-      :items="matchs"
-      :single-expand="singleExpand"
-      :expanded.sync="expanded"
-      :search="search"
-      item-key="name"
-      show-expand
-      class="elevation-1"
-    >
-      <template v-slot:top>
-        <v-toolbar color="blue darken-4" >
-          <v-spacer></v-spacer>
+  <v-layout>
+    <v-col align="center">
+    <v-row>
+        <v-toolbar light color="blue darken-4" dark>
+          <v-col>
+          <v-toolbar-title class="font-weight-bold">PARTIDOS DISPONIBLES</v-toolbar-title>
+          </v-col>
         </v-toolbar>
-      </template>
-      <template v-slot:expanded-item>
-        <v-toolbar color="blue darken-4" align="center">
-          <v-spacer></v-spacer>
-          <v-btn to="/butacas" align-center text="true" dark>Comprar Entradas</v-btn>
-        </v-toolbar>
-      </template>
+      </v-row>
       <br />
-    </v-data-table>
-  </v-card>
+      <v-row>
+        <v-toolbar light color="blue darken-4" dark>
+          <v-col>
+          <v-btn icon disabled></v-btn>
+          <v-btn icon disabled></v-btn>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Rival</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Día</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Hora</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Competición</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-btn icon disabled></v-btn>
+          </v-col>
+        </v-toolbar>
+      </v-row>
+      <br />
+      <v-row>
+        <v-toolbar light>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/logo1.png" alt="John" />
+          <img  height="50" width="38" src="@/assets/atleti.png" alt="John" />
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Atlético de Madrid</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>01-02-2020</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>16:00</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/LaLiga_Santander.png" alt="John" />
+          </v-col>
+          <v-col>
+            <v-btn color="blue darken-4" icon to="/butacas"  class="mr-12 font-weight-bold" dark>
+              Comprar Entradas 
+            </v-btn>
+          </v-col>
+        </v-toolbar>
+      </v-row>
+      <br />
+      <v-row>
+        <v-toolbar light>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/logo1.png" alt="John" />
+          <img  height="50" width="50" src="@/assets/celta.png" alt="John" />
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Celta de Vigo</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>16-02-2020</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>16:00</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/LaLiga_Santander.png" alt="John" />
+          </v-col>
+          <v-col>
+            <v-btn color="blue darken-4" icon to="/butacas"  class="mr-12 font-weight-bold" dark>
+              Comprar Entradas 
+            </v-btn>
+          </v-col>
+        </v-toolbar>
+      </v-row>
+      <br />
+      <v-row>
+        <v-toolbar light>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/logo1.png" alt="John" />
+          <img  height="50" width="50" src="@/assets/Manchester_City.png" alt="John" />
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Manchester City</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>26-02-2020</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>21:00</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/champions.png" alt="John" />
+          </v-col>
+          <v-col>
+            <v-btn color="blue darken-4" icon to="/butacas"  class="mr-12 font-weight-bold" dark>
+              Comprar Entradas
+            </v-btn>
+          </v-col>
+        </v-toolbar>
+      </v-row>
+      <br />
+      <v-row>
+       <v-toolbar light>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/logo1.png" alt="John" />
+          <img  height="50" width="50" src="@/assets/barsa.png" alt="John" />
+          </v-col>
+          <v-col>
+          <v-toolbar-title>Barcelona</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>01-03-2020</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <v-toolbar-title>16:00</v-toolbar-title>
+          </v-col>
+          <v-col>
+          <img  height="50" width="50" src="@/assets/LaLiga_Santander.png" alt="John" />
+          </v-col>
+          <v-col >
+            <v-btn color="blue darken-4" icon to="/butacas"  class="mr-12 font-weight-bold" dark> Comprar Entradas
+            </v-btn>
+          </v-col>
+        </v-toolbar>
+      </v-row>
+    </v-col>
+  </v-layout>
 </template>
 
 <script>
@@ -38,51 +146,6 @@ export default {
     return {
       //Para inicio sesion
       show1: false,
-
-      //Para la pagina pricnipal
-      expanded: [],
-      sortable: false,
-      singleExpand: false,
-      search: "",
-      headers: [
-        { text: "", align: "center", sortable: false, value: "escudos" },
-        { text: "Rival", align: "center", sortable: false, value: "name" },
-        { text: "Dia", align: "center", sortable: false, value: "day" },
-        { text: "Hora", align: "center", sortable: false, value: "time" },
-        {
-          text: "Competición",
-          align: "center",
-          sortable: false,
-          value: "competition"
-        },
-        { text: "", value: "data-table-expand" }
-      ],
-      matchs: [
-        {
-          name: "Atlético de Madrid",
-          day: "01-02-2020",
-          time: "16:00",
-          competition: "Liga"
-        },
-        {
-          name: "Celta de Vigo",
-          day: "16-02-2020",
-          time: "16:00",
-          competition: "Liga"
-        },
-        {
-          name: "Manchester City",
-          day: "26-02-2020",
-          time: "21:00",
-          competition: "Liga de Campeones"
-        },
-        {
-          name: "Barcelona",
-          day: "01-03-2020",
-          time: "19:00",
-          competition: "Liga"
-        }
-      ]
     };
   }
 };

@@ -43,9 +43,7 @@ export default new VueRouter({
       path: '/datosDeLaCompra',
       name: 'datosDeLaCompra',
       component: DatosCompra
-    }
-
-
+    },
   ]
 })
 

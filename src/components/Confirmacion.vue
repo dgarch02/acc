@@ -30,7 +30,7 @@
         <br />
         <v-card-actions>
           <v-spacer></v-spacer>
-            <v-btn align="center" color="blue darken-4" class="white--text" to="/">Aceptar</v-btn>
+            <v-btn align="center" color="blue darken-4" class="white--text" to="/prueba">Aceptar</v-btn>
         </v-card-actions>
         <br />
         <v-expansion-panels>

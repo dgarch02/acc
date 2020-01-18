@@ -1,18 +1,18 @@
 <template>
   <v-app id="principal">
-    <v-app-bar color="blue darken-4" dark dense>
+    <v-app-bar color="blue darken-4" dark dense height="80">
       <v-toolbar-items>
         <router-link to="/">
         <v-img src="@/assets/logo1.png" height="100px" width="100px"></v-img>
         </router-link>
       </v-toolbar-items>
-
-      <v-toolbar-title style="width: 30000px"><v-btn text="true" to="/">Real Madrid C.F.</v-btn></v-toolbar-title>
+      <v-col>
+      <v-toolbar-title  fixed style="width: 1300px"><v-btn x-large text="true" to="/" block class="display-2 font-weight-black">Real Madrid C.F.</v-btn></v-toolbar-title>
+      </v-col>
     </v-app-bar>
-
-    <br />
-    <br />
-    <br />
+    <br>
+    <br>
+   
     <template>
       <component :is="layout"></component>
     </template>
