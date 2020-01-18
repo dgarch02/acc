@@ -98,7 +98,11 @@
       </v-col>
       <!-- Columna de imagen -->
       <v-col>
-        <v-btn color="blue darken-4" class="white--text">AAAAA COMPRA</v-btn>
+        <v-parallax
+          width="600"
+          height="400"
+          src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/01/17/15792607273973.jpg"
+        ></v-parallax>
       </v-col>
     </v-row>
     <br />
