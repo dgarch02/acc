@@ -9,7 +9,7 @@
           <v-col md="auto">
             <h2>1. Datos del cliente</h2>
           </v-col>
-          <v-col class="ml-12 pt-4" md="auto">
+          <v-col class="ml-12 pt-4 pl-6" md="auto">
             <v-row>
               <v-text>Nombre: Fernando Rodríguez Rodríguez</v-text>
             </v-row>
@@ -25,21 +25,22 @@
         </v-row>
 
         <!-- Linea divisoria -->
-        <v-row>
-          <v-col></v-col>
-          <v-col>
+        <v-row class="ml-n12">
+          <v-col class="ml-12 pl-12"></v-col>
+          <v-col md="auto">
             <v-divider></v-divider>
           </v-col>
+          <v-col></v-col>
           <v-col></v-col>
         </v-row>
 
         <!-- Fila datos de la tarjeta -->
-        <v-row class="ml-n12">
+        <v-row>
           <v-col class="ml-12 pl-12"></v-col>
           <v-col md="auto">
             <h2>2. Método de pago</h2>
           </v-col>
-          <v-col class="ml-12 pt-4" md="auto">
+          <v-col class="ml-12 pt-4 pl-7" md="auto">
             <v-row>
               <v-text>Nombre del titular: Fernando Rodríguez Rodríguez</v-text>
             </v-row>
@@ -63,7 +64,7 @@
 
         <!-- Fila datos del partido -->
         <v-row class="ml-n12">
-          <v-col class="ml-12 pl-12"></v-col>
+          <v-col class="ml-9 pl-12"></v-col>
           <v-col md="auto">
             <h2>3. Revisar productos</h2>
           </v-col>
@@ -97,12 +98,8 @@
         </v-row>
       </v-col>
       <!-- Columna de imagen -->
-      <v-col>
-        <v-parallax
-          width="600"
-          height="400"
-          src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/01/17/15792607273973.jpg"
-        ></v-parallax>
+      <v-col md="auto" class="ml-n12 mr-12 mt-4 pr-12">
+        <v-img src="@/assets/derbi.jpg" height="300px" width="500px"></v-img>
       </v-col>
     </v-row>
     <br />
