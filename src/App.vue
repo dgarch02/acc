@@ -2,10 +2,12 @@
   <v-app id="principal">
     <v-app-bar color="blue darken-4" dark dense>
       <v-toolbar-items>
+        <router-link to="/">
         <v-img src="@/assets/logo1.png" height="100px" width="100px"></v-img>
+        </router-link>
       </v-toolbar-items>
 
-      <v-toolbar-title style="width: 30000px">Real Madrid C.F.</v-toolbar-title>
+      <v-toolbar-title style="width: 30000px"><v-btn color="blue darken-4" dark to="/">Real Madrid C.F.</v-btn></v-toolbar-title>
     </v-app-bar>
 
     <br />

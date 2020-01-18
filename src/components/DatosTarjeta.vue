@@ -38,9 +38,7 @@
       <br />
       <br />
       <v-row align-content="center" justify="center">
-        <router-link to="/datosDeLaCompra">
-          <v-btn color="blue darken-4" class="white--text">CONTINUAR</v-btn>
-        </router-link>
+          <v-btn color="blue darken-4" class="white--text" to="/datosDeLaCompra">CONTINUAR</v-btn>
       </v-row>
       <br />
       <br />

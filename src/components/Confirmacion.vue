@@ -21,23 +21,16 @@
         <br />
         <br />
         <v-toolbar light>
-          <p>Se ha enviado el ticket de compra a la siguiente dirección de correo electrónico:</p>
+          <p class="mt-4">Se ha enviado el ticket de compra a la siguiente dirección de correo electrónico:</p>
         </v-toolbar>
         <br />
         <v-toolbar light>
-          <v-expansion-panels>
-            <v-expansion-panel>
-              <v-expansion-panel-header>Correo Electrónico</v-expansion-panel-header>
-              <v-expansion-panel-content>ferrod@gmail.com</v-expansion-panel-content>
-            </v-expansion-panel>
-          </v-expansion-panels>
+          <p class="mt-4 text-center">ferrod@gmail.com</p>
         </v-toolbar>
         <br />
         <v-card-actions>
           <v-spacer></v-spacer>
-          <router-link to="/">
-            <v-btn align="center" color="blue darken-4" class="white--text">Aceptar</v-btn>
-          </router-link>
+            <v-btn align="center" color="blue darken-4" class="white--text" to="/">Aceptar</v-btn>
         </v-card-actions>
         <br />
         <v-expansion-panels>
@@ -49,9 +42,7 @@
             <v-expansion-panel-content>
               <br />
               <p align="center">
-                <a href="https://www.survio.com/survey/d/C6D2A9P0L8O5B0W9Q">
-                  <v-btn color="blue darken-4" class="white--text">Contestar encuesta</v-btn>
-                </a>
+                  <v-btn color="blue darken-4" class="white--text" href="https://www.survio.com/survey/d/C6D2A9P0L8O5B0W9Q">Contestar encuesta</v-btn>
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>

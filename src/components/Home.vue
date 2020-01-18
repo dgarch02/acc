@@ -60,8 +60,8 @@ export default {
       ],
       matchs: [
         {
-          name: "Sevilla FC",
-          day: "18-01-2020",
+          name: "Atlético de Madrid",
+          day: "01-02-2020",
           time: "16:00",
           competition: "Liga"
         },

@@ -20,13 +20,11 @@
           <v-toolbar-title>50€</v-toolbar-title>
           <v-spacer></v-spacer>
 
-          <v-combobox color="dark-blue 4" :items="items" dont-fill-mask-blanks></v-combobox>
+          <v-select :items="items" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
-          <router-link color="white" to="/inicio">
-            <v-btn icon>
+            <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>
             </v-btn>
-          </router-link>
         </v-toolbar>
       </v-row>
       <br />
@@ -39,13 +37,11 @@
           <v-toolbar-title>100€</v-toolbar-title>
           <v-spacer></v-spacer>
 
-          <v-combobox color="dark-blue 4" :items="items"></v-combobox>
+          <v-select :items="items" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
-          <router-link color="white" to="/inicio">
-            <v-btn icon>
+            <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>
             </v-btn>
-          </router-link>
         </v-toolbar>
       </v-row>
       <br />
@@ -57,13 +53,11 @@
           <v-toolbar-title>50€</v-toolbar-title>
           <v-spacer></v-spacer>
 
-          <v-combobox color="dark-blue 4" :items="items"></v-combobox>
+          <v-select :items="items" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
-          <router-link color="white" to="/inicio">
-            <v-btn icon>
+            <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>
             </v-btn>
-          </router-link>
         </v-toolbar>
       </v-row>
       <br />
@@ -74,13 +68,11 @@
           <v-spacer></v-spacer>
           <v-toolbar-title>200€</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-combobox color="dark-blue 4" :items="items"></v-combobox>
+          <v-select :items="items" color="blue darken-4" value=1></v-select>
           <v-spacer></v-spacer>
-          <router-link color="white" to="/inicio">
-            <v-btn icon>
+            <v-btn icon to="/inicio">
               <v-icon>mdi-basket-outline</v-icon>
             </v-btn>
-          </router-link>
         </v-toolbar>
       </v-row>
     </v-col>

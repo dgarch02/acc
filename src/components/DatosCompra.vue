@@ -5,7 +5,7 @@
       <v-col>
         <!-- Fila datos del cliente -->
         <v-row class="ml-n12">
-          <v-col class="ml-12 pl-12"></v-col>
+          <v-col class="ml-9 pl-12"></v-col>
           <v-col md="auto">
             <h2>1. Datos del cliente</h2>
           </v-col>
@@ -25,18 +25,15 @@
         </v-row>
 
         <!-- Linea divisoria -->
-        <v-row class="ml-n12">
-          <v-col class="ml-12 pl-12"></v-col>
-          <v-col md="auto">
+        <v-row class="ml-12 pl-4 mr-12">
+          <v-col class="ml-12 pl-12 mr-12 pr-12">
             <v-divider></v-divider>
           </v-col>
-          <v-col></v-col>
-          <v-col></v-col>
         </v-row>
 
         <!-- Fila datos de la tarjeta -->
         <v-row>
-          <v-col class="ml-12 pl-12"></v-col>
+          <v-col class="ml-9 pl-12"></v-col>
           <v-col md="auto">
             <h2>2. Método de pago</h2>
           </v-col>
@@ -53,27 +50,26 @@
           <v-col></v-col>
           <v-col></v-col>
         </v-row>
+
         <!-- Linea divisoria -->
-        <v-row>
-          <v-col></v-col>
-          <v-col>
+        <v-row class="ml-12 pl-4 mr-12">
+          <v-col class="ml-12 pl-12 mr-12 pr-12">
             <v-divider></v-divider>
           </v-col>
-          <v-col></v-col>
         </v-row>
 
         <!-- Fila datos del partido -->
         <v-row class="ml-n12">
-          <v-col class="ml-9 pl-12"></v-col>
+          <v-col class="ml-12 pl-12"></v-col>
           <v-col md="auto">
             <h2>3. Revisar productos</h2>
           </v-col>
           <v-col class="ml-12 pt-4" md="auto">
             <v-row>
-              <v-text>Partido: Real Madrid CF vs. Sevilla FC</v-text>
+              <v-text>Partido: Real Madrid vs. Atlético de Madrid</v-text>
             </v-row>
             <v-row>
-              <v-text>Sábado, 18 de Enero de 2020</v-text>
+              <v-text>Sábado, 1 de Febrero de 2020, 16:00</v-text>
             </v-row>
             <v-row>
               <v-text>Zona: Fondo Sur</v-text>
@@ -92,9 +88,7 @@
         <br />
 
         <v-row justify="center">
-          <router-link to="/confirmacion">
-            <v-btn color="blue darken-4" class="white--text">CONFIRMAR COMPRA</v-btn>
-          </router-link>
+            <v-btn color="blue darken-4" class="white--text" to="/confirmacion">CONFIRMAR COMPRA</v-btn>
         </v-row>
       </v-col>
       <!-- Columna de imagen -->

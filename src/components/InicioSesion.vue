@@ -36,9 +36,7 @@
             </v-row>
 
             <v-row align-content="center" justify="center">
-              <router-link to="/tarjeta">
-                <v-btn color="blue darken-4" class="white--text">CONTINUAR</v-btn>
-              </router-link>
+                <v-btn color="blue darken-4" class="white--text" to="/tarjeta">CONTINUAR</v-btn>
             </v-row>
           </v-layout>
           <br />
