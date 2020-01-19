@@ -43,8 +43,8 @@
             </v-row>
             <v-row>
               <p>Tarjeta:</p>
-              <p class="font-weight-bold">Visa / 4B / Euro6000</p>
-              <p>que termina en 1000</p>
+              <p class="font-weight-bold ml-1">Visa / 4B / Euro6000</p>
+              <p class="ml-1">que termina en 1000</p>
             </v-row>
           </v-col>
           <v-col></v-col>
@@ -79,7 +79,7 @@
             </v-row>
             <v-row>
               <v-text>Precio total:</v-text>
-              <v-text class="font-weight-bold">200€</v-text>
+              <v-text class="font-weight-bold ml-1">200€</v-text>
             </v-row>
           </v-col>
           <v-col></v-col>
